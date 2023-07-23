@@ -1,8 +1,7 @@
 body {
-  padding: 25px;
   background-color: rgb(255, 255, 255);
   color: black;
-  font-size: 25px;
+  margin: 0;
 }
 
 .decnone
@@ -242,81 +241,144 @@ body {
   background-size: cover;
 }
 
-.btn1 {
-    position: relative;
-    padding: 10px 20px;
-    border-radius: 2px;
-    font-size: 14px;
-    text-transform: uppercase;
-    font-weight: 600;
-    letter-spacing: 2px;
-    background: transparent;
-    color: #ffffff;
-    overflow: hidden;
-    box-shadow: 0 0 0 0 transparent;
-    -webkit-transition: all 1.2s ease-in;
-    -moz-transition: all 0.2s ease-in;
-    transition: all 0.2s ease-in;
-    transition: top 0.3s;
-  
+* {
+  box-sizing: border-box;
+}
+
+
+
+h2 {
+  text-align: center;
+}
+.logo{
+  text-shadow: 2px 2px 4px #000000;
+  color:white;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-image: linear-gradient(to right, #212020 , #000000);
+  color: #ffffff;
+  height: 60px;
+  padding: 10px;
+  font-weight:bolder;
+}
+.menu li:hover{
+  color:white;
+  cursor:pointer;
+  background-color:rgb(255, 0, 0);
+
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu > li {
+  margin: 0 1rem;
+  overflow: hidden;
+}
+/*Container for menu button  */
+.menu-button-container {
+  display: none;
+  height: 100%;
+  width: 30px;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+    /*  Creating the menu button */
+    .menu-button,
+.menu-button::before,
+.menu-button::after {
+  display: block;
+  background-color: #fff;
+  position: absolute;
+  height: 6px;
+  width: 32px;
+  border-radius: 3px;
+}
+
+.menu-button::before {
+  content: '';
+  margin-top: -8px;
+}
+
+.menu-button::after {
+  content: '';
+  margin-top: 8px;
+}
+
+    /*  Adding Functionality to the Hamburger Menu with CSS  */
+    #menu-toggle:checked + .menu-button-container .menu-button::before {
+  margin-top: 0px;
+  transform: rotate(45deg);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button {
+  background: rgba(255, 255, 255, 0);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::after {
+  margin-top: 0px;
+/*  transforms the hamburger icon into a cross  */
+  transform: rotate(-45deg);
+}
+
+    /* Making the navbar responsive by CSS Media Queries */
+    @media (max-width: 700px) {
+  .menu-button-container {
+    display: flex;
   }
-  
-  .btn1:hover {
-    background: rgb(255, 255, 255);
-    box-shadow: 0 0 30px 5px rgba(87, 84, 84, 0.815);
-    -webkit-transition: all 0.2s ease-out;
-    -moz-transition: all 0.2s ease-out;
-    transition: all 0.2s ease-out;
-    color: black;
-  }
-  
-  .btn1:hover::before {
-    -webkit-animation: sh02 0.5s 0s linear;
-    -moz-animation: sh02 0.5s 0s linear;
-    animation: sh02 0.5s 0s linear;
-  }
-  
-  .btn1::before {
-    content: '';
-    display: block;
-    width: 0px;
-    height: 86%;
+  .menu {
     position: absolute;
-    top: 7%;
-    left: 0%;
-    opacity: 0;
-    background: #e366d2;
-    box-shadow: 0 0 50px 30px hsl(219, 81%, 72%);
-    -webkit-transform: skewX(-20deg);
-    -moz-transform: skewX(-20deg);
-    -ms-transform: skewX(-20deg);
-    -o-transform: skewX(-20deg);
-    transform: skewX(-20deg);
+    top: 0;
+    margin-top: 50px;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
   }
-  
-  @keyframes sh02 {
-    from {
-      opacity: 0;
-      left: 0%;
-    }
-  
-    50% {
-      opacity: 1;
-    }
-  
-    to {
-      opacity: 0;
-      left: 100%;
-    }
+  #menu-toggle ~ .menu li {
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
   }
-  
-  .btn1:active {
-    box-shadow: 0 0 0 0 transparent;
-    -webkit-transition: box-shadow 0.2s ease-in;
-    -moz-transition: box-shadow 0.2s ease-in;
-    transition: box-shadow 0.2s ease-in;
+  #menu-toggle:checked ~ .menu li {
+    border: 1px solid #9f9a9a;
+    height: 2.5em;
+    padding: 0.5em;
   }
-  
+  .menu > li {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0.5em 0;
+    width: 100%;
+    color: black;
+    background-color: #E8E8E8;
+    
+  }
+  .menu > li:not(:last-child) {
+    border-bottom: 1px solid #444;
+ 
+  }
+}
 
   .flip-card {
     background-color: transparent;
