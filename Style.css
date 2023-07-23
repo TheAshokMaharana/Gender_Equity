@@ -1,5 +1,6 @@
 
 
+
 .decnone
 {
   text-decoration: none;
@@ -658,6 +659,7 @@ body { background-color: rgb(255, 255, 255); color: black; margin: 0; }
 
 footer{
     position: absolute;
+    margin-bottom:0;
     bottom: 0;
     left: 0;
     right: 0;
