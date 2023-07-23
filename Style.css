@@ -4,7 +4,10 @@ body {
   color: black;
   font-size: 25px;
 }
-
+.responsive {
+  width: 100%;
+  height: auto;
+}
 
 .dark-mode {
   background-color: black;
