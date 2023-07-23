@@ -178,7 +178,7 @@ body {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: auto;
 }
 .parallax2 {
   /* The image used */
