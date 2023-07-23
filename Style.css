@@ -764,5 +764,7 @@ display: block;
 @media (max-width:500px) {
 .footer-menu ul{
   display: flex;
+  margin-bottom:0;
+
 }
 }
