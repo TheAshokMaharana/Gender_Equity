@@ -4,6 +4,12 @@ body {
   color: black;
   font-size: 25px;
 }
+
+.decnone
+{
+  text-decoration: none;
+  
+}
 .responsive {
   width: 100%;
   height: auto;
