@@ -626,7 +626,7 @@ body {
   }
 
   
-.hh::before {  
+  .hh::before {  
     transform: scaleX(0);
     transform-origin: bottom right;
   }
@@ -638,7 +638,8 @@ body {
   
   .hh::before {
     content: " ";
-    display:block;
+    display: block;
+    position: absolute;
     top: 0; right: 0; bottom: 0; left: 0;
     inset: 0 0 0 0;
     background: hsl(200 100% 80%);
@@ -646,7 +647,7 @@ body {
     transition: transform .3s ease;
   }
   
-  .hh {
+ .hh {
     position: relative;
-  }  
+  } 
   
