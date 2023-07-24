@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gender Equity</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./Style.css">
+    <script src="javas.js"></script>
+</head>
+<body >
+  <!--Navbar-->
+    <div class="fixed-top">
+        <section class="nav">
+      <!-- We can also insert any logo here     -->
+      <div class="logo">
+           Gender Equity
+      </div>
+    <div class="logo">
+        <span class="navbar-text">
+          <label class="switch">
+            <span class="sun"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g fill="#ffd43b"><circle r="5" cy="12" cx="12"></circle><path d="m21 13h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm-17 0h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm13.66-5.66a1 1 0 0 1 -.66-.29 1 1 0 0 1 0-1.41l.71-.71a1 1 0 1 1 1.41 1.41l-.71.71a1 1 0 0 1 -.75.29zm-12.02 12.02a1 1 0 0 1 -.71-.29 1 1 0 0 1 0-1.41l.71-.66a1 1 0 0 1 1.41 1.41l-.71.71a1 1 0 0 1 -.7.24zm6.36-14.36a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm0 17a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm-5.66-14.66a1 1 0 0 1 -.7-.29l-.71-.71a1 1 0 0 1 1.41-1.41l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.29zm12.02 12.02a1 1 0 0 1 -.7-.29l-.66-.71a1 1 0 0 1 1.36-1.36l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.24z"></path></g></svg></span>
+            <span class="moon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="m223.5 32c-123.5 0-223.5 100.3-223.5 224s100 224 223.5 224c60.6 0 115.5-24.2 155.8-63.4 5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6-96.9 0-175.5-78.8-175.5-176 0-65.8 36-123.1 89.3-153.3 6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z"></path></svg></span>   
+            <input type="checkbox" class="input" onclick="myFunction()">
+            <span class="slider"></span>
+          </label>
+        </span>
+    </div>
+
+      <!--  checkbox to control the icon's state    -->
+      <input id="menu-toggle" type="checkbox" />
+      <label class='menu-button-container' for="menu-toggle">
+          <div class='menu-button'></div>
+        </label>
+      <!--  main menu    -->
+      <ul class="menu">
+          <li><a href="index.html" class="decnone">Home</a></li>
+          <li><a href="About_us.html" class="decnone">About</a></li>
+          <li><a href="Contact_Us.html" class="decnone">Contact</a></li>
+      </ul>
+  </section>
+          </nav>
+    </div>
+
+    <div class="row">
+      <div class="row">&nbsp;<br><br></div>
+      <div class="col-2">
+        &nbsp;
+      </div>
+      <div class="col">
+        <div class="container">
+          <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000" style="
+          background: rgb(236, 236, 236);
+          box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 0"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="img1.jpeg" class="d-block w-100" alt="image1">
+                </div>
+                <div class="carousel-item">
+                  <img src="img2.jpeg" class="d-block w-100" alt="image2">
+                </div>
+                <div class="carousel-item">
+                  <img src="img3.jpeg" class="d-block w-100" alt="image3">
+                </div>
+                <div class="carousel-item">
+                  <img src="./1.jpg" class="d-block w-100" alt="image4">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+      </div>
+      </div>
+      <div class="col-2">
+        &nbsp;
+      </div>
+    </div>
+    <div class="row">&nbsp;<br><br></div><div class="row">&nbsp;<br><br></div>
+    <div>
+      <center>
+        <h2 style="color: darkgreen;" class="hh" >HOW TO PROMOTE GENDER EQUITY IN YOUR COMMUNITY</h2>
+      <p>
+        One way to promote gender equity is to celebrate strong women in all aspects of life. History bears a long 
+        list of intelligent and powerful women who have broken barriers and changed the future for women everywhere
+        . Share with your neighbors, community and coworkers what women have accomplished to improve our world and 
+        join the efforts of organizations focused on equity work, like United Way of the National Capital Area. You
+         can get involved by giving, advocating or volunteering, as well as by educating yourself more on equity by
+          earning an Equity Advocate Badge, taking United Way NCA’s Diversity, Equity & Inclusion Quiz, signing up 
+          for the 21 Day Race Equity Journey and more.
+        <br><h4>When none are ignored, all will thrive.</h4>
+    
+      </center>
+      </div>
+      
+    <div class="row">&nbsp;<br>&nbsp;</div>
+    <hr>&nbsp;<br>&nbsp;
+      
+    <div class="parallax4"></div>
+
+    <div class="row">&nbsp;<br>&nbsp;</div>
+  <hr>&nbsp;<br>&nbsp;
+  <center><h1 class="hh">WHAT IS GENDER EQUITY? DEFINITION & EXAMPLES |<br> UNITED WAY NCA</h1></center><br>
+    <div class="container"> 
+      <div class="row">
+        <div class="col col-3"></div>
+        <div class="col"><p><img src="111.png" alt="img" class="responsive"></p></div>
+        <div class="col col-3"></div>
+      </div>
+      <br>
+      <br>
+      <h2 class="hh">WHAT IS GENDER EQUITY?</h2>
+      <br>
+    <p>Two guiding principles are at the core of gender equity: fairness and impartiality. Fairness has 
+      to do with just treatment without favoritism or prejudice, while impartiality is defined as treating
+      all parties equally. Equity, in its simplest terms, means meeting communities where they are and 
+      allocating resources and opportunities as needed to create equal outcomes for all community members 
+      (find out more about the differences between equity and equality here).
+      <br<br>
+      Gender equity, defined by the European Institute for Gender Equality, is the “provision of fairness 
+      and justice in the distribution of benefits and responsibilities between women, men and all genders.
+      ” Gender equity is important because, historically, societies around the world have deemed females, 
+      transgender people, and nonbinary people as “weaker” or less important than males.
+      Today, gender equity has helped shape and change the roles and expectations of men, women 
+      and all genders at work, home and in society. Our world is a better place when all people are 
+      accepted for their talents, skills, and abilities, regardless of gender.
+      <br><br>
+    </p>
+      <h2 class="hh">WHAT DOES GENDER EQUITY MEAN?</h2>
+    <p>Gender equity means respecting all people without discrimination, regardless of their gender.
+       It also means addressing gender inequalities that limit a person’s ability to access opportunities 
+       to achieve better health, education and economic opportunity based on their gender.<br><br>
+    </p>
+      <h2 class="hh">BENEFITS OF GENDER EQUITY</h2>
+    <p>Gender equity improves opportunities for all and allows people to pursue their dreams despite gender.
+       Below are several benefits of gender equity. <br><br>
+    </p>
+      <h2 style="color: red;" class="hh">Example 1: Health Care Benefits</h2>
+      <p>
+        We cannot overemphasize the importance of gender equity in health care because the medical profession 
+        has favored the male anatomy in research and education. It was not until 1993 that Congress passed a 
+        law requiring clinical trials to include women and minorities in the study of diseases and treatments.
+         Yet to this day, doctors are more likely to dismiss a woman’s physical pain as being mental, emotional 
+         or even suggest that the patient is a hypochondriac. An article on WebMD revealed that in 2016, Dr.
+          Marjorie Jenkins published a national survey of sex and gender in medical education stating that only 
+          34.5% of medical students “would feel prepared to manage sex and gender difference in health care.” 
+          True gender equity in health care means all genders are heard and treated well, instead of having their
+           pain be dismissed based on their gender identity and anatomy.
+      </p>
+      <h2 style="color: red;" class="hh">Example 2: Workplace Benefits</h2>
+      <p>
+        Employers benefit when the contributions of collective minds are respected and received without prejudice,
+         discrimination or favoritism. A work environment that welcomes diversity of thought and is free from 
+         inequities improves life satisfaction for women and men. Gender equity drives creativity, innovation and
+          opens the door to endless possibilities.
+      </p>
+      <h2 style="color: red;" class="hh">Example 3: Societal Benefits</h2>
+      <p>
+        Gender equity removes the obstacles to progress that are inherent in our society and it is the bridge to 
+        treating all people fairly, whether they are male, female, transgender or nonbinary. It solves problems
+         with our labor force by providing more opportunities for women to excel in professions currently dominated 
+         by men. It allows all genders to express thought without fear of bias or bigotry, which increases 
+         collaboration in families, communities, work and politics. Gender equity reduces crime and violence against
+          women and makes communities safer on all levels.
+      </p>
+      <h2 style="color: darkgreen;" class="hh">HOW TO PROMOTE GENDER EQUITY IN YOUR COMMUNITY</h2>
+      <p>
+        One way to promote gender equity is to celebrate strong women in all aspects of life. History bears a long 
+        list of intelligent and powerful women who have broken barriers and changed the future for women everywhere
+        . Share with your neighbors, community and coworkers what women have accomplished to improve our world and 
+        join the efforts of organizations focused on equity work, like United Way of the National Capital Area. You
+         can get involved by giving, advocating or volunteering, as well as by educating yourself more on equity by
+          earning an Equity Advocate Badge, taking United Way NCA’s Diversity, Equity & Inclusion Quiz, signing up 
+          for the 21 Day Race Equity Journey and more.
+        <br><h4>When none are ignored, all will thrive.</h4>
+    
+      </p>
+      <br>
+     <br>
+
+      </div>
+      
+    <div class="parallax1"></div>
+
+    &nbsp;<br>&nbsp;&nbsp;<br>
+      <div class="container">
+        
+          
+              <div class="container">
+                <div class="row">
+                  <div class="col col-3"></div>
+                  <div class="col">
+                    <p><img src="./e1.jpg" alt="image1" class="responsive"></p>
+                </div>
+                <div class="col col-3"></div>
+                </div>
+              </div
+
+            <br>
+          <br>
+          <center><caption style="color: green;"><h2 class="hh">Gender Equity</h2></caption></center>
+        <p>
+        <br><br>
+        Gender equity refers to the concept of providing fairness and impartiality in opportunities, resources, 
+        and treatment for individuals of all genders. It aims to ensure that everyone, regardless of their gender
+         identity, has equal access to the same opportunities, rights, and benefits in all areas of life, including
+          education, employment, healthcare, and social and political participation.<br><br>
+
+        Gender equity recognizes that historically, women and other marginalized genders have faced various forms 
+        of discrimination, inequality, and disadvantage. It seeks to address and rectify these disparities by promoting equal rights, representation, and empowerment.<br><br>
+
+        Achieving gender equity involves challenging and dismantling societal norms, stereotypes, and systemic
+         barriers that contribute to gender-based inequalities. It requires promoting equal opportunities for 
+         education and career advancement, addressing gender wage gaps, eliminating gender-based violence and 
+         harassment, and fostering inclusive policies and practices.<br><br>
+
+        Gender equity is a fundamental aspect of promoting social justice and building a more inclusive society.
+         It recognizes that gender equality goes beyond simply treating everyone the same and acknowledges the 
+         unique challenges and experiences faced by different genders. By striving for gender equity, we aim to create a society where all individuals have equal opportunities and can fully participate, regardless of their gender identity.<br><br>
+         </p>
+      </div>
+
+    <div class="row">&nbsp;<br>&nbsp;</div>
+    <hr>&nbsp;<br>&nbsp;
+
+    <div class="row">
+        <div class="col">
+<center><div class="flip-box">
+          <div class="flip-box-inner">
+            <div class="flip-box-front">
+              <img src="./e3.webp" alt="Paris" style="width:300px;height:200px">
+            </div>
+            <div class="flip-box-back">
+              <img src="images (2).jpeg" alt="image3" style="width:300px;height:200px">
+            </div>
+          </div>
+        </div>
+</center>
+      </div>
+      <div class="col">
+<center><div class="flip-box">
+          <div class="flip-box-inner">
+            <div class="flip-box-front">
+              <img src="./e2.png" alt="image1" style="width:300px;height:200px">
+            </div>
+            <div class="flip-box-back">
+              <img src="images (1).jpeg" alt="image2" style="width:300px;height:200px">
+            </div>
+          </div>
+      </div>
+</center>
+      </div>
+      <div class="col">
+<center><div class="flip-box">
+          <div class="flip-box-inner">
+            <div class="flip-box-front">
+              <img src="./11.jpeg" alt="Paris" style="width:300px;height:200px">
+            </div>
+            <div class="flip-box-back">
+              <img src="images.jpeg" alt="image1" style="width:300px;height:200px">
+            </div>
+          </div>
+        </div>
+</center>
+      </div>
+    </div>
+    
+    <div class="row">&nbsp;<br>&nbsp;</div>
+    <hr>&nbsp;<br>&nbsp;
+    
+
+
+    
+    <div class="parallax2"></div>
+    <div class="row">&nbsp;<br>&nbsp;</div>
+    <hr>&nbsp;<br>&nbsp;
+
+    <div class="container">
+      &nbsp;<br>
+      <div class="row">
+        <caption ><h1 class="hh"><b style="color: orange;">Removing Gender Inequity</b></h1></caption>
+        <br>
+      </div>
+      <br>
+      <br>
+      <div class="row">
+        <div class="col">
+      <p>
+        Removing gender inequity is a complex and multifaceted task that requires collective efforts from individuals, communities, organizations, and governments. Here are some key strategies and actions that can contribute to reducing and eventually eliminating gender inequity:<br><br>
+    <b style="color:blue;">1.</b>	Promote education and awareness: Education is crucial in challenging gender stereotypes, biases, and discriminatory practices. Promote comprehensive and inclusive education that addresses gender issues, teaches respect and equality, and encourages critical thinking.<br><br>
+    <b style="color:blue;">2.</b>	Empower women and marginalized genders: Empowerment involves providing opportunities, resources, and support for women and marginalized genders to access education, healthcare, employment, leadership positions, and decision-making roles. This can be achieved through targeted initiatives,<br> mentorship programs, and financial support.<br><br>
+    <b style="color:blue;">3.</b>	Challenge gender stereotypes and norms: Encourage a culture that challenges traditional gender roles and stereotypes. Promote diverse representations in media, literature, and the arts that reflect the full spectrum of gender identities and capabilities.<br><br>
+    <b style="color:blue;">4.</b>	Advocate for equal rights and policies: Support and advocate for the implementation of laws and policies that protect gender equality and address discrimination and violence. This includes promoting equal pay, gender-responsive legislation, and policies that support work-life balance and parental leave.<br><br>
+    <b style="color:blue;">5.</b>	Address gender-based violence: Combat gender-based violence by implementing comprehensive measures that include legal frameworks, support services, awareness campaigns, and prevention programs. This involves challenging the culture of victim-blaming and ensuring survivors have access to justice and support.<br><br>
+    <b style="color:blue;">6.</b>	Foster inclusive workplaces: Encourage workplaces to implement policies that promote gender equity, such as diverse hiring practices, pay transparency, and family-friendly policies. Support initiatives that address unconscious bias and provide equal opportunities for career advancement.<br><br>
+    <b style="color:blue;">7.</b>	Engage men and boys: Gender equity is a shared responsibility. Engage men and boys as allies and champions of gender equality by promoting positive masculinity, challenging harmful norms, and fostering respectful and equal relationships.<br><br>
+    <b style="color:blue;">8.</b>	Support grassroots movements and organizations: Support local and international organizations working towards gender equity. Donate, volunteer, or participate in advocacy campaigns that aim to address gender inequality at various levels.<br><br>
+    <b style="color:blue;">9.</b>	Collect and analyze data: Collect and analyze sex-disaggregated data to identify gaps and monitor progress in achieving gender equity. Use data to inform policies, programs, and decision-making processes.
+    <br><b style="color:blue;">10.</b>	Promote dialogue and collaboration: Foster open and inclusive dialogue among individuals communities, organizations, and policymakers. Encourage collaboration and partnerships to create synergies and maximize impact in addressing er inequity.<br><br>
+    Remember, achieving gender equity requires sustained efforts and a commitment to creating an inclusive and just society. It involves challenging deep-rooted attitudes, behaviors, and systems that perpetuate discrimination. By working collectively and taking concrete actions, we can contribute to a more equitable future for all genders.<br>
+    </p>
+    </div>
+    </div>
+      </div>
+      <div class="row">&nbsp;<br>&nbsp;</div>
+    <hr>&nbsp;<br>&nbsp;
+
+    <div class="container" >
+      <center>
+      <iframe height="300px"  src="https://www.youtube.com/embed/SG-0MRyEzPE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <iframe height="300px" src="https://www.youtube.com/embed/SG-0MRyEzPE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <iframe height="300px"  src="https://www.youtube.com/embed/SG-0MRyEzPE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </center>
+      </div>  
+
+    <div class="row">&nbsp;<br>&nbsp;</div>
+    <hr>&nbsp;<br>&nbsp;
+      
+    <div class="parallax3"></div>
+    <div class="row">&nbsp;<br>&nbsp;</div>
+    <hr>&nbsp;<br>&nbsp;
+
+        <div class="container-fluid">
+    <div class="row" style="background-color: black; border: 2px solid white;border-radius: 20px;">
+      <div class="col col-3">
+        <center>
+        <p style="margin-top: 40px;">
+          <a href="#index.html"class="decnone">Home</a><br>
+          <a href="About_us.html" class="decnone">About us</a><br>
+          <a href="Contact_Us.html" class="decnone">Contact us</a><br>
+        </p>
+        </center>
+      </div>
+      <div class="col">
+        <div style="margin: 23px;">
+        <center>
+          
+          <a href="https://www.facebook.com/equalitynoworg/"><img src="facebook.png" alt="facebook" style="padding: 20px;"></a>
+          <a href="https://twitter.com/i/flow/login?redirect_after_login=%2FUN_Women"><img src="twitter.png" alt="twitter" style="padding: 20px;"></a>
+          <a href="https://www.google.com/search?q=gender+equality+video&rlz=1C1CHBF_enIN1038IN1038&oq=&aqs=chrome.0.69i59i450l8.134135441j0j15&sourceid=chrome&ie=UTF-8#fpstate=ive&vld=cid:5e14c1a1,vid:G1EvoX6lf-Y"><img src="youtube-48.png" alt="you" style="padding: 20px;"></a>
+          <a href="https://www.instagram.com/explore/tags/genderequality/?hl=en"><img src="instagram-48.png" alt="instagram" style="padding: 20px;"></a>
+          <a href="https://ceplis.org/telegram-10-11/"><img src="telegram.png" alt="telegram" style="padding: 20px;"></a>
+          
+        </center>
+        </div>>
+      </div>
+      <div class="col col-3">
+        <center>
+        <p style="margin-top:50px;">
+          <b style="color: brown;">Phone no : </b><a href="#"class="decnone">7385345350</a><br>
+          <b style="color: brown;">Email : </b><a href="#" class="decnone">xyz000@gmail.com</a>
+       </p>
+      </center>
+      </div>
+    </div>
+  </div>
+
+    
+</body>
+</html>
